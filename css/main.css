@@ -1,0 +1,281 @@
+@charset "UTF-8";
+/* Variables */
+/* Index */
+.fondoAzul {
+  background-color: #012346; }
+
+.fondoRojo {
+  background-color: #9F1023; }
+
+.fondoAzul, .fondoRojo {
+  color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 40vh;
+  padding-top: 2em; }
+  .fondoAzul__titulo, .fondoRojo__titulo {
+    text-align: center;
+    padding-top: 15%;
+    display: flex;
+    font-size: 24px; }
+  .fondoAzul__parrafo, .fondoRojo__parrafo {
+    text-align: center; }
+
+@media only screen and (min-width: 700px) {
+  .contenedorIndex {
+    display: flex; }
+    .contenedorIndex .fondoAzul, .contenedorIndex .fondoRojo {
+      width: 50%;
+      border-top: white 2px solid;
+      padding-top: 0; } }
+
+/* Logística y Seguros */
+/* Iconos */
+.seccionIconos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  flex-basis: 100%; }
+  .seccionIconos .icono {
+    margin-top: 2em;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center; }
+    .seccionIconos .icono .imgIconoContenedor {
+      width: 6em;
+      height: 6em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%; }
+      @media only screen and (min-width: 700px) {
+        .seccionIconos .icono .imgIconoContenedor {
+          width: 8.5em;
+          height: 8.5em; } }
+      .seccionIconos .icono .imgIconoContenedor .imgSeguros, .seccionIconos .icono .imgIconoContenedor .imgLogistica {
+        width: 60%;
+        height: 60%;
+        padding: 5%; }
+        @media only screen and (min-width: 700px) {
+          .seccionIconos .icono .imgIconoContenedor .imgSeguros, .seccionIconos .icono .imgIconoContenedor .imgLogistica {
+            width: 110px;
+            height: 110px; } }
+    .seccionIconos .icono .imgIconoContenedor:hover {
+      box-shadow: 0px 0px 12px -4px #aca8a8;
+      transform: scale(1.1); }
+    .seccionIconos .icono h2 {
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 14px;
+      font-weight: normal;
+      padding: 1em;
+      text-align: center;
+      width: 10em; }
+      @media only screen and (min-width: 700px) {
+        .seccionIconos .icono h2 {
+          font-size: 16px;
+          width: 15em; } }
+
+/* Descripciones */
+.descripciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media only screen and (min-width: 700px) {
+    .descripciones {
+      flex-direction: row; } }
+  @media only screen and (min-width: 700px) {
+    .descripciones--derecha {
+      display: flex;
+      flex-direction: row-reverse; } }
+  .descripciones .descripcionLogistica, .descripciones .descripcionSeguros {
+    font-size: medium;
+    font-weight: normal;
+    width: 98%;
+    height: fit-content; }
+    @media only screen and (min-width: 700px) {
+      .descripciones .descripcionLogistica, .descripciones .descripcionSeguros {
+        width: 50%; } }
+    .descripciones .descripcionLogistica__titulo, .descripciones .descripcionSeguros__titulo {
+      margin: 2%; }
+      @media only screen and (min-width: 700px) {
+        .descripciones .descripcionLogistica__titulo, .descripciones .descripcionSeguros__titulo {
+          margin-left: 3%; } }
+    .descripciones .descripcionLogistica__parrafo, .descripciones .descripcionSeguros__parrafo {
+      width: fit-content;
+      max-width: 100%;
+      margin: 2%; }
+      @media only screen and (min-width: 700px) {
+        .descripciones .descripcionLogistica__parrafo, .descripciones .descripcionSeguros__parrafo {
+          margin-left: 3%; } }
+    .descripciones .descripcionLogistica__lista, .descripciones .descripcionSeguros__lista {
+      width: 38%;
+      display: flex;
+      flex-direction: column;
+      list-style-type: circle;
+      margin-left: 3%; }
+  .descripciones .imagenDescripcion {
+    height: 50vh;
+    object-fit: cover;
+    width: 98%;
+    margin-bottom: 2%; }
+    @media only screen and (min-width: 700px) {
+      .descripciones .imagenDescripcion {
+        width: 50%;
+        min-width: 45%;
+        margin-bottom: 0; } }
+
+/* Nosotros */
+.nosotros__titulo {
+  font-size: larger;
+  text-transform: uppercase;
+  margin-top: 2%;
+  margin-left: 2%;
+  color: #9F1023; }
+
+.nosotros__parrafos {
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (min-width: 700px) {
+    .nosotros__parrafos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 50% 50%;
+      margin: 1% 2% 4%; } }
+
+.nosotros p {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%; }
+  .nosotros p .parrafo1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2; }
+  .nosotros p .parrafo2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3; }
+  .nosotros p .parrafo3 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2; }
+  .nosotros p .parrafo4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3; }
+
+/* Consultas */
+.contenedorContacto {
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (min-width: 700px) {
+    .contenedorContacto {
+      flex-direction: row; } }
+  .contenedorContacto .contacto, .contenedorContacto .consulta {
+    width: 100%; }
+    .contenedorContacto .contacto__titulo, .contenedorContacto .consulta__titulo {
+      font-size: 32px;
+      color: #FAFAFA;
+      margin-top: 15%;
+      margin-left: 15%; }
+    .contenedorContacto .contacto__datos, .contenedorContacto .consulta__datos {
+      font-size: 16px;
+      color: #FAFAFA;
+      margin-top: 5%;
+      margin-left: 20%; }
+    @media only screen and (min-width: 700px) {
+      .contenedorContacto .contacto, .contenedorContacto .consulta {
+        width: 50%; } }
+  .contenedorContacto .contacto {
+    background-color: #012346;
+    height: 60vh; }
+    @media only screen and (min-width: 700px) {
+      .contenedorContacto .contacto {
+        height: 80vh; } }
+    .contenedorContacto .contacto svg {
+      margin-right: 2%; }
+  .contenedorContacto .consulta {
+    background-color: #9F1023;
+    height: 80vh; }
+    .contenedorContacto .consulta .formularioConsultas {
+      margin-left: 10%; }
+      .contenedorContacto .consulta .formularioConsultas input, .contenedorContacto .consulta .formularioConsultas textarea {
+        max-width: 65%;
+        margin: 2%;
+        background-color: #FAFAFA; }
+      .contenedorContacto .consulta .formularioConsultas .labelFormulario {
+        margin-left: 2%; }
+      .contenedorContacto .consulta .formularioConsultas textarea {
+        height: 20vh !important; }
+      .contenedorContacto .consulta .formularioConsultas .botonEnviar {
+        background-color: #FAFAFA; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.bodyFont {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; }
+
+/* Barra de navegación */
+.navbar {
+  padding: 0; }
+  .navbar .logo {
+    margin: 0.5%;
+    width: 12em;
+    height: 3.5em; }
+  @media only screen and (min-width: 700px) {
+    .navbar .nav-link:hover {
+      transform: scale(1.1); } }
+
+.navbar-light .navbar-nav .nav-link {
+  text-decoration: none;
+  color: #012346;
+  margin: 0.3em; }
+
+/* Carousel */
+.imagenCarousel {
+  height: 45vh;
+  object-fit: cover; }
+
+/* Imágen con título */
+.imagenSuperior {
+  width: 100%;
+  height: 45vh;
+  object-fit: cover;
+  filter: brightness(0.8); }
+  @media only screen and (min-width: 700px) {
+    .imagenSuperior {
+      display: flex;
+      position: relative; } }
+
+.tituloSuperior {
+  display: none; }
+  @media only screen and (min-width: 700px) {
+    .tituloSuperior {
+      display: flex;
+      font-size: xx-large;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #FAFAFA;
+      text-align: center;
+      width: 40%; } }
+
+/* Footer */
+.footerEstilo {
+  width: 100%;
+  height: 5em;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #012346; }
+  .footerEstilo h3 {
+    color: #FAFAFA;
+    position: relative;
+    font-size: 16px; }

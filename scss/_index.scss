@@ -1,0 +1,39 @@
+/* Index */
+
+.fondoAzul {
+    background-color: $azul;
+}
+.fondoRojo {
+    background-color: $rojo;
+}
+
+.fondoAzul, .fondoRojo {
+    color: $blanco;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+    width: 100%;
+    height: 40vh;
+    padding-top: 2em;
+    &__titulo {
+        text-align: center;
+        padding-top: 15%;
+        display: flex;
+        font-size: 24px;
+    }
+    &__parrafo {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+
+    .contenedorIndex {
+        display: flex;
+        .fondoAzul, .fondoRojo {
+            width: 50%;
+            border-top: white 2px solid;
+            padding-top: 0;
+        }
+    }
+}    

@@ -1,0 +1,59 @@
+
+/* Consultas */
+
+.contenedorContacto {
+    display: flex;
+    flex-direction: column;
+    @media only screen and (min-width: 700px) {
+        flex-direction: row;
+    }
+    .contacto, .consulta {
+        width: 100%;
+        &__titulo {
+            font-size: 32px;
+            color: $blanco;
+            margin-top: 15%;
+            margin-left: 15%;
+        }
+        &__datos {
+            font-size: 16px;
+            color: $blanco;
+            margin-top: 5%;
+            margin-left: 20%;
+        }
+        @media only screen and (min-width: 700px) {
+            width: 50%;
+        }
+    }
+    .contacto {
+        background-color: $azul;
+        height: 60vh;
+        @media only screen and (min-width: 700px) {
+            height: 80vh;
+        }
+        svg {
+            margin-right: 2%;
+        }
+    }
+    .consulta {
+        background-color: $rojo;
+        height: 80vh;
+        .formularioConsultas {
+            margin-left: 10%;
+            input, textarea {
+                max-width: 65%;
+                margin: 2%;
+                background-color: $blanco;
+            }
+            .labelFormulario {
+                margin-left: 2%;
+            }            
+            textarea {
+                height: 20vh !important;
+            }
+            .botonEnviar {
+                background-color: $blanco;
+            }
+        }
+    }
+}
