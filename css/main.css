@@ -242,11 +242,28 @@
 /* Imágen con título */
 .imagenSuperior {
   width: 100%;
-  height: 45vh;
-  object-fit: cover; }
+  height: 60vh;
+  object-fit: cover;
+  filter: brightness(0.8); }
+  @media only screen and (min-width: 700px) {
+    .imagenSuperior {
+      display: flex;
+      position: relative; } }
 
 .tituloSuperior {
   display: none; }
+  @media only screen and (min-width: 700px) {
+    .tituloSuperior {
+      display: flex;
+      font-size: xx-large;
+      font-weight: 900;
+      text-shadow: black 1px 1px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #FAFAFA;
+      text-align: center; } }
 
 /* Footer */
 .footerEstilo {
