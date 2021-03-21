@@ -130,7 +130,7 @@
         .descripciones .descripcionLogistica__parrafo, .descripciones .descripcionSeguros__parrafo {
           margin-left: 3%; } }
     .descripciones .descripcionLogistica__lista, .descripciones .descripcionSeguros__lista {
-      width: 38%;
+      width: 60%;
       display: flex;
       flex-direction: column;
       list-style-type: circle;
