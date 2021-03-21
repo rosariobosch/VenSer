@@ -189,7 +189,7 @@
 .contenedorContacto {
   display: flex;
   flex-direction: column; }
-  @media only screen and (min-width: 700px) {
+  @media only screen and (min-width: 1025px) {
     .contenedorContacto {
       flex-direction: row; } }
   .contenedorContacto .contacto, .contenedorContacto .consulta {
@@ -197,43 +197,49 @@
     .contenedorContacto .contacto__titulo, .contenedorContacto .consulta__titulo {
       font-size: 32px;
       color: #FAFAFA;
-      margin-top: 15%;
+      margin-top: 10%;
       margin-left: 15%;
-      font-weight: 500; }
+      font-weight: 300; }
     .contenedorContacto .contacto__datos, .contenedorContacto .consulta__datos {
       font-size: 16px;
       color: #FAFAFA;
       margin-top: 5%;
       margin-left: 20%;
-      font-weight: 300; }
-    @media only screen and (min-width: 700px) {
+      font-weight: 300;
+      max-width: 70%; }
+    @media only screen and (min-width: 1025px) {
       .contenedorContacto .contacto, .contenedorContacto .consulta {
         width: 50%; } }
   .contenedorContacto .contacto {
     background-color: #012346;
-    height: 60vh; }
-    @media only screen and (min-width: 700px) {
+    height: 45vh; }
+    @media only screen and (min-width: 1025px) {
       .contenedorContacto .contacto {
-        height: 80vh; } }
+        height: 85vh; } }
     .contenedorContacto .contacto svg {
       margin-right: 2%; }
   .contenedorContacto .consulta {
     background-color: #9F1023;
-    height: 80vh; }
+    height: 85vh; }
     .contenedorContacto .consulta .formularioConsultas {
-      margin-left: 10%;
-      font-weight: 300; }
+      width: 85%;
+      margin-left: 5%; }
       .contenedorContacto .consulta .formularioConsultas input, .contenedorContacto .consulta .formularioConsultas textarea {
-        max-width: 65%;
-        margin: 2%;
+        margin: 3%;
+        font-weight: 300;
         background-color: #FAFAFA; }
       .contenedorContacto .consulta .formularioConsultas .labelFormulario {
-        margin-left: 2%; }
+        margin-left: 2%;
+        font-weight: 300; }
       .contenedorContacto .consulta .formularioConsultas textarea {
         height: 20vh !important; }
       .contenedorContacto .consulta .formularioConsultas .botonEnviar {
-        background-color: #FAFAFA;
         font-weight: 300; }
+      @media only screen and (min-width: 1025px) {
+        .contenedorContacto .consulta .formularioConsultas {
+          margin-left: 15%; }
+          .contenedorContacto .consulta .formularioConsultas input, .contenedorContacto .consulta .formularioConsultas textarea {
+            max-width: 65%; } }
 
 * {
   margin: 0;
