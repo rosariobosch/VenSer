@@ -1,10 +1,17 @@
 /* Index */
 
-.fondoAzul {
-    background-color: $azul;
+.contenedorIndex {
+    background-image: url("../media/background.png");
+    background-size: cover;
 }
-.fondoRojo {
-    background-color: $rojo;
+
+@media only screen and (max-width: 700px) {
+    .fondoAzul {
+        background-color: $azul;
+    }
+    .fondoRojo {
+        background-color: $rojo;
+    }
 }
 
 .fondoAzul, .fondoRojo {

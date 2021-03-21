@@ -1,11 +1,15 @@
 @charset "UTF-8";
 /* Variables */
 /* Index */
-.fondoAzul {
-  background-color: #012346; }
+.contenedorIndex {
+  background-image: url("../media/background.png");
+  background-size: cover; }
 
-.fondoRojo {
-  background-color: #9F1023; }
+@media only screen and (max-width: 700px) {
+  .fondoAzul {
+    background-color: #012346; }
+  .fondoRojo {
+    background-color: #9F1023; } }
 
 .fondoAzul, .fondoRojo {
   color: #FAFAFA;
