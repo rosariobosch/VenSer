@@ -6,6 +6,8 @@
     flex-direction: column;
     @media only screen and (min-width: 1025px) {
         flex-direction: row;
+        background-image: url("../media/background.png");
+        background-size: cover;
     }
     .contacto, .consulta {
         width: 100%;
@@ -29,8 +31,10 @@
         }
     }
     .contacto {
-        background-color: $azul;
         height: 45vh;
+        @media only screen and (max-width: 1024px) {
+            background-color: $azul;
+        }
         @media only screen and (min-width: 1025px) {
             height: 85vh;
         }
@@ -39,8 +43,10 @@
         }
     }
     .consulta {
-        background-color: $rojo;
         height: 85vh;
+        @media only screen and (max-width: 1024px) {
+            background-color: $rojo;
+        }
         .formularioConsultas {
             width: 85%;
             margin-left: 5%;
