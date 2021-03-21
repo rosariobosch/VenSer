@@ -21,7 +21,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px; }
+    font-size: 24px;
+    font-weight: 300; }
     .fondoAzul__titulo a, .fondoRojo__titulo a {
       text-decoration: none;
       color: #FAFAFA; }
@@ -29,6 +30,7 @@
       transform: scale(1.1); }
   .fondoAzul__parrafo, .fondoRojo__parrafo {
     text-align: center;
+    font-weight: 300;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,14 +90,14 @@
       display: flex;
       justify-content: space-evenly;
       font-size: 14px;
-      font-weight: normal;
+      font-weight: 300;
       padding: 1em;
       text-align: center;
       width: 10em; }
       @media only screen and (min-width: 700px) {
         .seccionIconos .icono p {
           font-size: 16px;
-          width: 15em; } }
+          width: 16em; } }
 
 /* Descripciones */
 .descripciones {
@@ -111,7 +113,7 @@
       flex-direction: row-reverse; } }
   .descripciones .descripcionLogistica, .descripciones .descripcionSeguros {
     font-size: medium;
-    font-weight: normal;
+    font-weight: 300;
     width: 98%;
     height: fit-content; }
     @media only screen and (min-width: 700px) {
@@ -149,6 +151,7 @@
 /* Nosotros */
 .nosotros__titulo {
   font-size: larger;
+  font-weight: 300;
   text-transform: uppercase;
   margin-top: 2%;
   margin-left: 2%;
@@ -156,7 +159,8 @@
 
 .nosotros__parrafos {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  font-weight: 300; }
   .nosotros__parrafos p {
     margin-left: 2%;
     margin-right: 2%;
@@ -194,12 +198,14 @@
       font-size: 32px;
       color: #FAFAFA;
       margin-top: 15%;
-      margin-left: 15%; }
+      margin-left: 15%;
+      font-weight: 500; }
     .contenedorContacto .contacto__datos, .contenedorContacto .consulta__datos {
       font-size: 16px;
       color: #FAFAFA;
       margin-top: 5%;
-      margin-left: 20%; }
+      margin-left: 20%;
+      font-weight: 300; }
     @media only screen and (min-width: 700px) {
       .contenedorContacto .contacto, .contenedorContacto .consulta {
         width: 50%; } }
@@ -215,7 +221,8 @@
     background-color: #9F1023;
     height: 80vh; }
     .contenedorContacto .consulta .formularioConsultas {
-      margin-left: 10%; }
+      margin-left: 10%;
+      font-weight: 300; }
       .contenedorContacto .consulta .formularioConsultas input, .contenedorContacto .consulta .formularioConsultas textarea {
         max-width: 65%;
         margin: 2%;
@@ -225,7 +232,8 @@
       .contenedorContacto .consulta .formularioConsultas textarea {
         height: 20vh !important; }
       .contenedorContacto .consulta .formularioConsultas .botonEnviar {
-        background-color: #FAFAFA; }
+        background-color: #FAFAFA;
+        font-weight: 300; }
 
 * {
   margin: 0;
@@ -238,7 +246,8 @@
 
 /* Barra de navegación */
 .navbar {
-  padding: 0; }
+  padding: 0;
+  font-weight: 300; }
   .navbar .logo {
     margin: 0.5%;
     width: 12em;
@@ -274,8 +283,7 @@
     .tituloSuperior {
       display: flex;
       font-size: xx-large;
-      font-weight: 900;
-      text-shadow: black 1px 1px;
+      font-weight: 500;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -296,4 +304,5 @@
   .footerEstilo h3 {
     color: #FAFAFA;
     position: relative;
-    font-size: 16px; }
+    font-size: 16px;
+    font-weight: 300; }

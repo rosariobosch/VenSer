@@ -19,6 +19,7 @@
 
 .navbar {
     padding: 0;
+    font-weight: 300;
     .logo {
         margin: 0.5%;
         width: 12em;
@@ -62,8 +63,7 @@
     @media only screen and (min-width: 700px) {
         display: flex;
         font-size: xx-large;
-        font-weight: 900;
-        text-shadow: black 1px 1px;
+        font-weight: 500;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -88,5 +88,6 @@
         color: $blanco;
         position: relative;
         font-size: 16px;
+        font-weight: 300;
     }
 }

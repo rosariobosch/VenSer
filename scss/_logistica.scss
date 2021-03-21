@@ -47,13 +47,13 @@
             display: flex;
                 justify-content: space-evenly;
             font-size: 14px;
-            font-weight: normal;
+            font-weight: 300;
             padding: 1em;
             text-align: center;
             width: 10em;
             @media only screen and (min-width: 700px) {
                 font-size: 16px;
-                width: 15em;
+                width: 16em;
             }
         }
     }
@@ -76,7 +76,7 @@
     }
     .descripcionLogistica, .descripcionSeguros {
         font-size: medium;
-        font-weight: normal;
+        font-weight: 300;
         width: 98%;
         height:fit-content;
         @media only screen and (min-width: 700px) {
