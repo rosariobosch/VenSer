@@ -80,7 +80,7 @@
     .seccionIconos .icono .imgIconoContenedor:hover {
       box-shadow: 0px 0px 12px -4px #aca8a8;
       transform: scale(1.1); }
-    .seccionIconos .icono h2 {
+    .seccionIconos .icono p {
       display: flex;
       justify-content: space-evenly;
       font-size: 14px;
@@ -89,7 +89,7 @@
       text-align: center;
       width: 10em; }
       @media only screen and (min-width: 700px) {
-        .seccionIconos .icono h2 {
+        .seccionIconos .icono p {
           font-size: 16px;
           width: 15em; } }
 
