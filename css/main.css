@@ -227,10 +227,13 @@
     .contenedorContacto .contacto svg {
       margin-right: 2%; }
   .contenedorContacto .consulta {
-    height: 85vh; }
+    height: 70vh; }
     @media only screen and (max-width: 1024px) {
       .contenedorContacto .consulta {
         background-color: #9F1023; } }
+    @media only screen and (min-width: 1025px) {
+      .contenedorContacto .consulta {
+        height: 85vh; } }
     .contenedorContacto .consulta .formularioConsultas {
       width: 85%;
       margin-left: 5%; }

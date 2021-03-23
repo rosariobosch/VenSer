@@ -43,9 +43,12 @@
         }
     }
     .consulta {
-        height: 85vh;
+        height: 70vh;
         @media only screen and (max-width: 1024px) {
             background-color: $rojo;
+        }
+        @media only screen and (min-width: 1025px) {
+            height: 85vh;
         }
         .formularioConsultas {
             width: 85%;
