@@ -14,14 +14,14 @@
             justify-content: space-evenly;
             align-items: center;
         .imgIconoContenedor {
-            width: 6em;
+            width: $ancho;
             height: 6em;
             display: flex;
                 justify-content: center;
                 align-items: center;
             border-radius: 50%;
             @media only screen and (min-width: 700px) {
-                    width: 8.5em;
+                    width: $ancho+2.5em;
                     height: 8.5em;
             }
             a {
