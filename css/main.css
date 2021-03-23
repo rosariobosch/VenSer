@@ -111,6 +111,8 @@
   @media only screen and (min-width: 700px) {
     .descripciones {
       flex-direction: row; } }
+  .descripciones--uno {
+    margin-top: 3%; }
   @media only screen and (min-width: 700px) {
     .descripciones--derecha {
       display: flex;
