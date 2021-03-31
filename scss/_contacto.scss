@@ -35,6 +35,9 @@
         @media only screen and (max-width: 1024px) {
             background-color: $azul;
         }
+        @media only screen and (min-width: 650px) {
+            height: 60vh;
+        }
         @media only screen and (min-width: 1025px) {
             height: 85vh;
         }

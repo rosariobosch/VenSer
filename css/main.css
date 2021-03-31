@@ -223,6 +223,9 @@
     @media only screen and (max-width: 1024px) {
       .contenedorContacto .contacto {
         background-color: #012346; } }
+    @media only screen and (min-width: 650px) {
+      .contenedorContacto .contacto {
+        height: 60vh; } }
     @media only screen and (min-width: 1025px) {
       .contenedorContacto .contacto {
         height: 85vh; } }
